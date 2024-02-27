@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fashion Mania</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 1rem;
+        }
+        
+        main {
+            padding: 2rem;
+        }
+        
+        .store-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+        }
+        
+        .store-info h2 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .store-info p {
+            margin-top: 0;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Fashion Mania</h1>
+    </header>
+    <main>
+        <div>Add Products</div>
+        <form action="{{product.add_to_cart_url}}" method="post">
+            <p>Name: {{ product.name }}</p>
+            <p>Price: {{ product.price | price }}</p>
+            <input type="submit" class="button" value="{% t 'Add to Shopping Cart' %}" />
+        </form>
+        <div class="store-info">
+            <div>
+                <h2>Sheikhupura</h2>
+                <p> Main Street no 1</p>
+                <p>Punjab, Pakistan </p>
+            </div>
+            <div>
+                <h2>24 Hours</h2>
+                <p>Monday-Friday: 9am-5pm</p>
+                <p>Saturday: 10am-2pm</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div>
+                <h2>Contact Information</h2>
+                <p>Phone: (+92) 305-602645</p>
+                <p>Email: Hamzaahmadfarooqi@gmail.com</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2024 Store Name</p>
+    </footer>
+</body>
+
+</html>

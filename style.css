@@ -1,0 +1,34 @@
+<html><head><title>Fashion Mania</title>Style Sheet tags go here... <style type="text/css"><!-- a:link {
+    color: #0000ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic
+}
+
+a:visited {
+    color: #80080;
+    font-weight: bold;
+    text-decoration: underline
+}
+
+body {
+    background: #ffffff url(http://www.your-server.com/bg.gif) repeat;
+    color: #000000;
+    font-size: 8pt;
+    font-family: verdana
+}
+
+h1 {
+    color: #000000;
+    font-size: 8pt;
+    font-style: italic;
+    font-family: arial
+}
+
+h2 {
+    color: #000000;
+    font-size: 8pt;
+    font-family: courier
+}
+
+--></style></head><body>
